@@ -28,7 +28,6 @@
     "docs:serve": "vitepress serve docs",
     "init:dep": "pnpx zx scripts/zx/install-workspace-root-deps-only.mjs",
     "init:workspace": "pnpm init:dep && pnpm cli cache && pnpm cli init",
-    "postinstall": "pnpm cli cache && pnpm remind",
     "remind": "ts-node -P scripts/tsconfig.script.json scripts/postinstall-reminder.ts"
   },
   "resolutions": {
